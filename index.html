@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora ONO 99</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Instrument+Sans:wght@600&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CALCULADORA ONO 99</h1>
+        <input 
+            type="number" 
+            id="current-value" 
+            value="0"
+            min="0" 
+            max="99">
+    </header>
+    <hr />
+    <main>
+        <section id="cards-container" class="cards-container"></section>
+
+        <hr class="border-numbers" />
+
+        <section class="buttons-actions">
+            <button id="button-undo" class="button button-undo">
+                <div class="button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29l0-320c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3l0 41.7 0 41.7L459.5 440.6zM256 352l0-96 0-128 0-32c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29l0-64z" />
+                    </svg>
+                </div>
+                <div class="button-text">deshacer</div> 
+            </button>
+            <button id="button-reset" class="button button-reset">
+                <div class="button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path
+                            d="M192 64C86 64 0 150 0 256S86 448 192 448l256 0c106 0 192-86 192-192s-86-192-192-192L192 64zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24l0 32 32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0 0 32c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-32-32 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l32 0 0-32z" />
+                    </svg>
+                </div>
+                <div class="button-text">reiniciar</div>
+            </button>
+        </section>
+    </main>
+
+    <script src="calculadora-ono-99.js"></script>
+</body>
+
+</html>
